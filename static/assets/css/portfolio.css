@@ -1,0 +1,37 @@
+.img-center-cover{
+    object-fit: cover;
+    object-position: center;
+}
+.header{
+    padding:100px 8px;
+}
+.header-title{
+    letter-spacing: 1.5px;
+}
+.sns-icon{
+    font-size: 28px;
+    padding: 0 8px;
+}
+.text-twitter{
+    color:#000000
+}
+.text-facebook{
+    color:#3b5998
+}
+.text-instagram{
+    color:#e1306c
+}
+.text-line{
+    color:#00c300
+}
+.font-14{
+    font-size: 14px;
+}
+.mb-100{
+    margin-bottom: 100px;
+}
+.left-top{
+    position: absolute;
+    left: 40px;
+    top: 24px;
+}

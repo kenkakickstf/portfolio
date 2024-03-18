@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+
+<section>
+    <a href="/" class="left-top"><i class="fa-solid fa-arrow-left"></i> 戻る</a>
+    <div class="container">
+        <div class="text-center py-5">
+            <h3 class="display-4 font-weight-bold text-primary">WORKS</h3>
+        </div>
+        <div class="row">
+        {% for work in works %}
+            <div class="col-lg-4 mb-3">
+                <a href="{{ work.url }} target="_blank">
+                    <div class="card shadow-sm border border-lights">
+                        <div>
+                            <img src="{% if work.image %}{{work.image.url}}{% else %}{% static 'assets/img/sample.jpg' %}{% endif %}" class="w-100 img-center-cover" height=200 alt="">
+                        </div>
+                        <div class="p-3">
+                            <h5 class="text-dark mb-0">{{ work.title }}</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}
